@@ -1,0 +1,134 @@
+<!-- Contact -->
+<div id="contact" class="form-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="text-container">
+                    <div class="section-title">CONTACT</div>
+                    <h2 class="text-color-blue">Get In Touch Using The Form</h2>
+                    <h6 class="white">You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</h6>
+                    <ul class="list-unstyled li-space-lg white">
+                        <li class="address"><i class="fas fa-map-marker-alt"></i>7th Cross Rd, Koramangala 3 Block, Koramangala, Bengaluru, Karnataka 560034</li>
+                        <!-- <li><i class="fas fa-phone"></i>+91-999999999</li>
+                        <li><i class="fas fa-envelope"></i>info@abc.in</li> -->
+                        <button type="button" class="btn btn-dark"><li><i class="fas fa-phone"></i><a href="tel:+91999999999">+91-999999999</a></li></button>
+                        &nbsp;
+                        <button type="button" class="btn btn-dark"><li><i class="fas fa-envelope"></i><a href="mailto:info@abc.com">info@abc.in</a></li></button>
+                    </ul>
+                    <h3>Follow CircuitBoard On Social Media</h3>
+
+                    <span class="fa-stack">
+                        <a href="https://www.facebook.com/dbhairi" target="_blank">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://twitter.com/chota_scientist" target="_blank">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.youtube.com/channel/UCAfQZjk26f9uuS_nlRXkyIQ" target="_blank">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-youtube fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://www.instagram.com/circuitboard.in/" target="_blank">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+                        </a>
+                    </span>
+                    <span class="fa-stack">
+                        <a href="https://in.linkedin.com/in/dattatrybhairi" target="_blank">
+                            <span class="hexagon"></span>
+                            <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                        </a>
+                    </span>
+                </div> <!-- end of text-container -->
+            </div> <!-- end of col -->
+            <div class="col-lg-6">
+                
+                <!-- Contact Form -->
+                <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <div class="form-group">
+                        <input type="text" class="form-control-input" id="cname" required>
+                        <label class="label-control" for="cname">Name</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control-input" id="cemail" required>
+                        <label class="label-control" for="cemail">Email</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" class="form-control-input" id="cphonenumber" required>
+                        <label class="label-control" for="cphonenumber">Phone Number</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                        <label class="label-control" for="cmessage">Your message</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>
+                        I agree with CircuitBoard's stated 
+                        <a href="privacy-policy.html">Privacy Policy</a> and 
+                        <a href="terms-conditions.html">Terms Conditions</a> 
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <span class="buttons">
+                            <button type="submit" class="form-control-submit-button">SEND OVER EMAIL</button>
+                        </span>
+                        <!-- <span class="buttons">
+                            <label id="label">URL</label>
+                        </span> -->
+                        <span class="buttons">
+                            <button type="submit" class="form-control-submit-button" onclick="sendOverWhatssApp()">SEND OVER WHATSAPP</button>
+                            
+                            <!-- <script>
+                            function sendOverWhatssApp() {
+                                // initiate variables with form content
+                                var name = $("#cname").val();
+                                var email = $("#cemail").val();
+                                var phoneNumber = $("#cphonenumber").val();
+                                var message = $("#cmessage").val();
+                                var whatsappMessage = "Name: " + name
+                                "\nEmail: " + email
+                                "\n" + message;
+                                var url= "https://api.whatsapp.com/send?phone='"+phoneNumber+"'&text='"+whatsappMessage+"'";
+                                var xmlhttp;
+
+                                if (window.XMLHttpRequest) {
+                                    // code for IE7+, Firefox, Chrome, Opera, Safari
+                                    xmlhttp = new XMLHttpRequest();
+                                } else {
+                                    // code for IE6, IE5
+                                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                                }
+
+                                xmlhttp.onreadystatechange = callback;
+
+                                xmlhttp.open("GET", url, true);
+                                xmlhttp.send();
+                                document.getElementById('label').innerHTML = url;
+                            }    
+                            </script> -->
+                    </span>
+                    <!-- https://api.whatsapp.com/send?phone={phoneNumber}&text={message} -->
+                    </div>
+                    <div class="form-message">
+                        <div id="cmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+                <!-- end of contact form -->
+
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</div> <!-- end of form-2 -->
+<!-- end of contact -->
